@@ -231,13 +231,13 @@ npm run build
 
 ## Current Scope
 
-TipType is currently an MVP focused on one core problem:
+TipType is currently an prototype focused on one core problem:
 
 > **I know what I mean. Help me find the word that belongs here.**
 
-It is intentionally not designed to generate full essays or act as a general-purpose AI writing assistant.
+At the moment, it's not designed to generate full essays or act as a general-purpose AI writing assistant.
 
-The current version focuses on:
+What the current version does focus on is:
 
 1. generating context-aware vocabulary candidates
 2. evaluating candidates using several features
@@ -247,7 +247,7 @@ The current version focuses on:
 
 ## Future Work
 
-The current MVP is only the first stage of the larger TipType idea.
+The current version is just the first stage of the larger TipType idea.
 
 Future features I would like to explore include:
 
@@ -265,20 +265,7 @@ Future features I would like to explore include:
 - learned reranking using behavioral data
 - experiments comparing LLM order, rule-based ranking, and learned ranking
 
-Eventually, the manually designed ranking system could act as a baseline for a learned model.
-
-For example, recommendation interactions could be treated as training data using features such as:
-
-- context relevance
-- style relevance
-- grammar fit
-- word frequency
-- semantic similarity
-- historical acceptance
-- writing mode
-- original LLM position
-
-A future model could then learn which candidates users are most likely to select and use that information to personalize the final ranking.
+Eventually, the manually designed ranking system could act as a baseline for a learned model. For example, recommendation interactions could be treated as training data using features such as context/style relevance, word frequency, grammar fit, semantic similarity, historical acceptance, etc. A future model could then learn which candidates users are most likely to select and use that information to personalize the final ranking.
 
 The long-term goal is for TipType to understand not only:
 
@@ -286,7 +273,7 @@ The long-term goal is for TipType to understand not only:
 
 but also:
 
-> **Which word fits this sentence while still sounding like the person writing it?**
+> **Which word fits this sentence, while still sounding like the person writing it?**
 
 ## Feedback...
 Please enjoy, and feel free to share any suggestions, ideas, or feedback my way! I'm always looking for ways to improve TipType. 
